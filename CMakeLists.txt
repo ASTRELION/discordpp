@@ -4,4 +4,4 @@ cmake_minimum_required(VERSION 3.10)
 project(discordpp)
 
 # add executable
-add_executable(Discodpp main.cpp)
+add_executable(discordpp main.cpp)
