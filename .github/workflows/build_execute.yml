@@ -1,0 +1,19 @@
+name: CI
+on: [push]
+
+jobs:
+	build:
+		runs-on: ubuntu-latest
+		steps:
+		- name: Build the files
+		  run: |
+		  	cmake CMakeLists.txt
+	compile:
+		runs-on: ubuntu-latest
+		steps:
+		- name: Make the files
+		  run: |
+		  	make
+	execute:
+		needs: [build]
+		runs-on: ubuntu-latest
