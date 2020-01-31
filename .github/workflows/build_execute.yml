@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: 'Build the files'
       run: |
-        cmake CMakeLists.txt
+        cmake /CMakeLists.txt
     - name: 'Make the files'
       run: |
         make
