@@ -16,4 +16,4 @@ jobs:
         
     - name: 'Execute the files'
       run: |
-        ./Discordpp
+        ./discordpp
