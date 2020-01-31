@@ -1,18 +1,21 @@
 name: CI
-on: [push]
+on: [push] 
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: 'Build the files'
       working-directory: ./
       run: |
         cmake CMakeLists.txt
+        
     - name: 'Make the files'
       working-directory: ./temp
       run: |
         make
+        
     - name: 'Execute the files'
       working-directory: ./temp
       run: echo "Done!"
