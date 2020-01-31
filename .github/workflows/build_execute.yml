@@ -5,6 +5,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: 'List files'
+      run: |
+        ls | echo
     - name: 'Build the files'
       run: |
         cmake /CMakeLists.txt
